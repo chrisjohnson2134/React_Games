@@ -1,6 +1,6 @@
-function Strike() {
+function Strike({strikeClass}) {
     return ( 
-        <div className="strike">
+        <div className={`strike ${strikeClass}`}>
             Strike
         </div>
      );
