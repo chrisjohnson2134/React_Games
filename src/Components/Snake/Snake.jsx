@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Board from "./Board";
 import { DIRECTIONS } from "../Utils/Constants.js";
 
-const MAX_ROWS = 4;
+const MAX_ROWS = 6;
 const MAX_COLS = 6;
 
 function Snake() {
@@ -44,6 +44,10 @@ function Snake() {
         const interval = setInterval(() => {
             let nextRow = row + currDirection.dr;
             let nextCol = column + currDirection.dc;
+            // console.log("next row: " + nextRow + " next col: " + nextCol);
+
+            nextRow = nextRow === -1 ? MAX_ROWS : nextRow % (MAX_ROWS);
+            nextCol = nextCol === -1 ? MAX_COLS : nextCol % (MAX_COLS);
 
             let newTiles = tiles.map(row => [...row]);
 
@@ -62,7 +66,7 @@ function Snake() {
                         }
                         //this is where you set it.
                         setHistoryArr(newHistoryArr);
-                    }
+            }
                 
             setTiles(newTiles);
         }, 1000);

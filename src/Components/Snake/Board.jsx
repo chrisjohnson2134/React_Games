@@ -30,6 +30,20 @@ function Board({tiles}) {
             <Tile tile={tiles[3][3]}/>
             <Tile tile={tiles[3][4]}/>
             <Tile tile={tiles[3][5]}/>
+
+            <Tile tile={tiles[4][0]}/>
+            <Tile tile={tiles[4][1]}/>
+            <Tile tile={tiles[4][2]}/>
+            <Tile tile={tiles[4][3]}/>
+            <Tile tile={tiles[4][4]}/>
+            <Tile tile={tiles[4][5]}/>
+
+            <Tile tile={tiles[5][0]}/>
+            <Tile tile={tiles[5][1]}/>
+            <Tile tile={tiles[5][2]}/>
+            <Tile tile={tiles[5][3]}/>
+            <Tile tile={tiles[5][4]}/>
+            <Tile tile={tiles[5][5]}/>
         </div>
      );
 }
