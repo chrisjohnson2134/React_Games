@@ -54,14 +54,14 @@ function Snake() {
                         //hi chris, the issue with this line is that it is a mutation,
                         //in react it is important to creat a new copy and then set.
                         // historyArr.push({row: nextRow, col: nextCol});
-                        const newHistory = [...historyArr, {row: nextRow, col: nextCol}]
-                        console.log(historyArr.length + "-" + snakeLength);
-                        if(historyArr.length > snakeLength){
-                            let dequeueItem = historyArr.shift();
+                        const newHistoryArr = [...historyArr, {row: nextRow, col: nextCol}];
+                        console.log(newHistoryArr.length + "-" + snakeLength);
+                        if(newHistoryArr.length > snakeLength){
+                            let dequeueItem = newHistoryArr.shift();
                             newTiles[dequeueItem.row][dequeueItem.col] = null;
                         }
                         //this is where you set it.
-                        setHistoryArr(newHistory);
+                        setHistoryArr(newHistoryArr);
                     }
                 
             setTiles(newTiles);
