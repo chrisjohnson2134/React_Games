@@ -18,6 +18,21 @@ h1{
   position: relative;
 }
 
+.snakeBoard{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+.circle {
+    width: 60px; 
+    height: 60px;
+    background-color: tomato;
+    border-radius: 50%; 
+    border: 2px solid black;
+    margin: 20px;
+}
+
 .tile{
   color: currentColor;
   font-size: 2em;

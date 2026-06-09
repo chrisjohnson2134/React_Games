@@ -1,9 +1,14 @@
 import './App.css';
-import TicTacToe from './Components/TicTacToe.tsx';
+import Snake from './Components/Snake/Snake.jsx';
+import TicTacToe from './Components/TicTacToe/TicTacToe.tsx';
 
 function App() {
   return (
-    <TicTacToe/>
+    <>
+    <Snake/>
+    {/* <TicTacToe/> */}
+    </>
+    
   );
 }
 
