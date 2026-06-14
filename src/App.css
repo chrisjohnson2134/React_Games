@@ -33,6 +33,14 @@ h1{
     margin: 20px;
 }
 
+.circle.food {
+    background-color: green;
+}
+
+.circle.head{
+  background-color: red;
+}
+
 .tile{
   color: currentColor;
   font-size: 2em;
@@ -58,7 +66,6 @@ h1{
   content: "O";
   opacity: 0.4;
 }
-
 
 .strike {
   position: absolute;
