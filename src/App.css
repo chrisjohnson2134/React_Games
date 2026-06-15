@@ -24,6 +24,12 @@ h1{
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 
+.bingoCard{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
 .circle {
     width: 60px; 
     height: 60px;
